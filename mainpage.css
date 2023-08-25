@@ -1,0 +1,153 @@
+body{
+	margin: 1em;
+	background-color: darkred;
+}
+.body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+.hd{
+	text-align: center;
+	padding: 2em;
+	/*background: repeating-conic-gradient(#000000 0deg 10deg, darkgreen 10deg 20deg, limegreen 20deg 30deg);*/
+	background: linear-gradient(-45deg, black, darkblue, blue, lightskyblue);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+.hdtxt{
+
+	animation: color-change 15s ease infinite;
+
+}
+.hdstxt{
+
+	animation: zoom-in-zoom-out 15s ease infinite;
+}@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.1, 1.1);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+@keyframes color-change {
+  0% { color: black; }
+  50% { color: white; }
+  100% { color: black; }
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+	font-family: 'Allerta Stencil';
+	font-stretch: extra-expanded;
+	font-size: xx-large;
+	font-weight: bolder;
+}
+footer{
+	position: relative;
+}
+.ft{
+	text-align: center;
+	padding: 2em;
+	/*background: repeating-conic-gradient(#000000 0deg 10deg, darkgreen 10deg 20deg, limegreen 20deg 30deg);*/
+	background: linear-gradient(-45deg, black, darkgrey, antiquewhite, white);
+	background-size: 400% 400%;
+	animation: ft-gradient 15s ease infinite;
+}
+.fttxt{
+
+	animation: ft-color-change 15s ease infinite;
+
+}
+.ftstxt{
+
+	animation: zoom-in-zoom-out 15s ease infinite;
+}@keyframes ft-zoom-in-zoom-out {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.1, 1.1);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+@keyframes ft-color-change {
+  0% { color: black; }
+  50% { color: white; }
+  100% { color: black; }
+}
+@keyframes ft-gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+	font-family: 'Allerta Stencil';
+	font-stretch: extra-expanded;
+	font-size: xx-large;
+	font-weight: bolder;
+}
+table, td {
+  	border: 5px solid black;
+  	border-collapse: collapse;
+	padding: 1em;
+}
+td {
+  	background-color: #991c84;
+}
+.tblcnt{
+	background-color: antiquewhite;
+	position: static;
+}
+.imganime{
+	transition-delay: 5ms;
+}
+
+.txt{
+	margin: 1em;
+	text-align: justify;
+	font-size: x-large;
+	font-family: Times New Roman, serif;
+}
+.sbhd{
+	text-decoration: underline;
+	font-family: sans-serif;
+	font-size: x-large;
+	font-weight: bolder;
+}
+button{
+	padding-top: 1.5em;
+	transition-duration: 0.4s;
+	width: 100%;
+	height: 100%;
+}
+button:hover{
+	cursor: pointer;
+	transform: scale(1.050);
+	box-shadow: 0 36px 48px 0 black, 0 51px 150px 0 black;
+	border: solid lightskyblue thick;
+}
+a{
+	transition: overlay 2s;
+}
